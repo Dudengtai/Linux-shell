@@ -1,0 +1,17 @@
+#! /bin/bash
+##写一个脚本实现如下功能：  输入一个数字，然后运行对应的一个命令。1---date 2--ls 3--who 4--pwd
+
+read -p '输入参数执行命令:' i
+if [ $i -eq 1 ]
+then
+ date
+elif [ $i -eq 2 ]
+then
+ ls
+elif [ $i -eq 3 ]
+then
+ who
+elif [ $i -eq 4 ]
+then
+ pwd
+fi
